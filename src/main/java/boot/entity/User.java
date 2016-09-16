@@ -1,5 +1,12 @@
 package boot.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="t_study")
 public class User {
 	
 	private String name;
@@ -8,13 +15,15 @@ public class User {
 	
 	private String sex;
 	
-	private String id;
+	@Id 
+	@GeneratedValue
+	private Long id;
 	
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

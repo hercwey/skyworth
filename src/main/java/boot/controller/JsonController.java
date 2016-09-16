@@ -1,27 +1,25 @@
 package boot.controller;
 
-import java.util.UUID;
+import javax.annotation.Resource;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import boot.entity.User;
+import boot.service.UserService;
 @RestController
 public class JsonController {
+	
+	@Resource
+	private UserService userService;
 	
 	@RequestMapping("/getUser")
 	@ResponseBody
 	public User getUser(){
-		User u = new User();
 		
-		u.setName("zxf");
-		u.setAge("34");
-		u.setSex("男");
-		String id = UUID.randomUUID().toString();
-		u.setId(id);
+		User u = this.userService.getById(1L);
+		
 		return u;
 		
 	}
