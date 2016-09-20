@@ -20,7 +20,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 
 public class SchedulingConfig {
 
-   @Scheduled(cron = "0/2 * * * * ?") // 每20秒执行一次
+  // @Scheduled(cron = "0/2 * * * * ?") // 每20秒执行一次
 
    public void scheduler() {
 
