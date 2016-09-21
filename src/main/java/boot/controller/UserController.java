@@ -2,6 +2,7 @@ package boot.controller;
 
 import javax.annotation.Resource;
 
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,6 +15,10 @@ public class UserController {
 	@Resource
 
 	private UserService userService;
+	
+	@Resource
+
+	private RedisTemplate<String,String> redisTemplate;
 
 	/**
 	 * 
@@ -32,6 +37,7 @@ public class UserController {
 		u.setSex("男");
 
 		userService.save(u);// 保存数据.
+		this.redisTemplate.opsForValue().set("zhouxiaofeng", "aaaaaaaaaaaaaa");
 
 		return "ok.Demo2Controller.save";
 
