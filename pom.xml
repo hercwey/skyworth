@@ -61,6 +61,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-redis</artifactId>
 		</dependency>
+		
+		 <!-- 集成ehcache需要的依赖-->
+
+       <dependency>
+           <groupId>net.sf.ehcache</groupId>
+           <artifactId>ehcache</artifactId>
+       </dependency>
 
 		<!-- 单元测试. -->
 		<dependency>
@@ -68,6 +75,23 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+           <groupId>org.apache.shiro</groupId>
+           <artifactId>shiro-spring</artifactId>
+           <version>1.2.2</version>
+       </dependency>
+       
+       <!-- ActiveMQ -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.13.2</version>
+        </dependency>
 
 	</dependencies>
 	<build>
