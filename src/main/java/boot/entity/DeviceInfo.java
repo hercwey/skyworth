@@ -104,10 +104,7 @@ public class DeviceInfo {
 	public java.lang.String getResolvedversion() {
 		return this.resolvedversion;
 	}
-	public void setLastreportedversion(java.lang.String value) {
-		this.lastreportedversion = value;
-	}
-	
+
 	public java.lang.String getLastreportedversion() {
 		return this.lastreportedversion;
 	}
