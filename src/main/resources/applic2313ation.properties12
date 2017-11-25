@@ -6,11 +6,11 @@ spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
 
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 
-spring.datasource.url=jdbc:mysql://192.168.70.74:3306/oss
+spring.datasource.url=jdbc:mysql://localhost:3306/oss
 
 spring.datasource.username=root
 
-spring.datasource.password=GZ^&*ott,.?ZJSM
+spring.datasource.password=123456
 
  
 
