@@ -138,4 +138,5 @@ target/
 *.epoch
 *.lck
 *.log
+*.xml
 >>>>>>> lisk/costRatio_20170206

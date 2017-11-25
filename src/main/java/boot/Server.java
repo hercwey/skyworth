@@ -29,9 +29,9 @@ public class Server extends SpringBootServletInitializer implements EmbeddedServ
         return builder.sources(Server.class);  
     }  
       
-    public static void main(String[] args) {  
+    public static void main(String[] args) {
         SpringApplication.run(Server.class, args);
-    }  
+    }
   
   
     @Override  

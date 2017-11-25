@@ -33,7 +33,7 @@ public class SchedulingConfig {
 	@Autowired
 	private UserService userService;
 
-   @Scheduled(cron = "0 41 21 ? * *") // 每20秒执行一次
+   //@Scheduled(cron = "0 41 21 ? * *") // 每20秒执行一次
 
    public void scheduler() {
 	   
