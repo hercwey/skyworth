@@ -30,7 +30,7 @@ public class Server extends SpringBootServletInitializer implements EmbeddedServ
     }  
       
     public static void main(String[] args) {  
-        SpringApplication.run(Server.class, args);  
+        SpringApplication.run(Server.class, args);
     }  
   
   
